@@ -1,0 +1,52 @@
+{
+    "name": "manojkiran/filament-quick-view",
+    "description": "Quick view slide-overs for related records in Filament tables and infolists.",
+    "keywords": ["laravel", "filament", "filament-plugin", "quick-view", "slide-over"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manoj Kiran",
+            "email": "manojkiran10031998@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^5.0",
+        "illuminate/support": "^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ManojKiran\\FilamentQuickView\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ManojKiran\\FilamentQuickView\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ManojKiran\\FilamentQuickView\\FilamentQuickViewServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "format": "pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
